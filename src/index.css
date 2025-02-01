@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* Navbar fixed */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Pastikan navbar berada di atas peta */
+}
+
+/* Menjaga peta tetap di bawah navbar */
+iframe {
+  z-index: 1; /* Peta berada di bawah navbar */
+}
