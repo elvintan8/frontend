@@ -11,7 +11,7 @@ export function dataPendaftaran() {
       dispatch({ type: actionTypes.GET_PENDAFTARAN_REQUEST });
   
       return axios
-        .get(`${URL_API}/daftaranggota`, {
+        .get(`${URL_API}/api/anggota/daftaranggota`, {
           headers: {
             Authorization: `Bearer ${token}`, // Perbaiki interpolasi Bearer Token
           },

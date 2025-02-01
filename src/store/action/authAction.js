@@ -10,7 +10,7 @@ export const login = (email, password) => {
 
     try {
       // Melakukan request ke API login
-      const response = await axios.post(`${URL_API}/login`, {
+      const response = await axios.post(`${URL_API}/api/user/login`, {
         email,
         password,
       });
