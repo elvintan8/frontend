@@ -93,7 +93,7 @@ export const createPendaftaran = (params) => {
 
     return axios
       .post(
-        `${URL_API}/anggota`,
+        `${URL_API}/api/anggota/anggota`,
         params,
         {
           headers: {
