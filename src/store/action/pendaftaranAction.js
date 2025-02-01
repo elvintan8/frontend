@@ -132,7 +132,7 @@ export const updatePendaftaran = (id, params) => {
 
     try {
       const response = await axios.put(
-        `${URL_API}/api/anggota/anggota/${id}`,
+        `${URL_API}/api/anggota/${id}`,
         params,
         {
           headers: {
@@ -170,7 +170,7 @@ export const deleteAnggota = (id) => {
     dispatch({ type: actionTypes.DELETE_PENDAFTARAN_REQUEST });
 
     try {
-      const response = await axios.delete(`${URL_API}/api/anggota/anggota/${id}`, {
+      const response = await axios.delete(`${URL_API}/api/anggota/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
